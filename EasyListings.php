@@ -57,6 +57,16 @@ class EasyListingsPlugin{
 
 register_activation_hook(__FILE__,array($EasyListingsPlugin, 'activate') );
 register_deactivation_hook(__FILE__,array($EasyListingsPlugin, 'deactivate') );
+
+function el_admin_menu_option(){
+    add_menu_page('Easy Listing', 'E-Listing', 'manage_options', 'el-admin-menu','el-admin-page','',200);
+    
+}
+
+add_action( 'admin_menu', 'el_admin_menu_option' );
+
+
+
 function wporg_options_page_html() {
     ?>
     <div class="wrap">
