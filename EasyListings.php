@@ -1,6 +1,6 @@
 <?php
 /** 
- * @package EasyListing
+ * @package EasyListings
  */
 
 /**
@@ -24,7 +24,7 @@ if ( ! defined( 'WPINC' ) ) {
       
 // Register the Custom Music Review Post Type
 
-class EasyListingPlugin{
+class EasyListingsPlugin{
 
     function __construct($arg){
         //echo $arg;
@@ -43,7 +43,7 @@ class EasyListingPlugin{
     }
 
 }
-if(class_exists('EasyListingPlugin')){
+if(class_exists('EasyListingsPlugin')){
     $EasylistingsPlugin = new EasyListingsPlugin('Easy Listing initialized');
 }
 
