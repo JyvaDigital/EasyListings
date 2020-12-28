@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/jyva/public_html/customers/kotisivut/wp-content/plugins/EasyListing
+    - /bin/cp README.md $DEPLOYPATH
+    - /bin/cp EasyListing.php $DEPLOYPATH
