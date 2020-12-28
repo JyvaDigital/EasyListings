@@ -4,7 +4,7 @@
  */
 
 /**
- * Plugin Name:       EasyListing
+ * Plugin Name:       EasyListings
  * Plugin URI:        https://github.com/JyvaDigital/EasyListings.git
  * Description:       Simple WP Directory Plugin
  * Version:           1.0.0
@@ -13,7 +13,7 @@
  * Author:            Ville Siren
  * Author URI:        https://jyva.io/
  * License:           All rights reserved
- * Text Domain:       wpdirectory
+ * Text Domain:       easylistings
  * Domain Path:       /languages
  */
 
@@ -24,7 +24,7 @@ if ( ! defined( 'WPINC' ) ) {
       
 // Register the Custom Music Review Post Type
 
-class WPListingPlugin{
+class EasyListingPlugin{
 
     function __construct($arg){
         //echo $arg;
@@ -43,12 +43,12 @@ class WPListingPlugin{
     }
 
 }
-if(class_exists('WPListingPlugin')){
-    $wplistingPlugin = new WPListingPlugin('WP Listing initialized');
+if(class_exists('EasyListingPlugin')){
+    $EasylistingsPlugin = new EasyListingsPlugin('Easy Listing initialized');
 }
 
-register_activation_hook(__FILE__,array($wplistingPlugin, 'activate') );
-register_deactivation_hook(__FILE__,array($wplistingPlugin, 'deactivate') );
+register_activation_hook(__FILE__,array($EasyListingsPlugin, 'activate') );
+register_deactivation_hook(__FILE__,array($EasyListingsPlugin, 'deactivate') );
 
 /* 
 function register_cpt_wpdirectory() {
